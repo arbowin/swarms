@@ -81,7 +81,8 @@ testpaths = ["tests"]
 asyncio_mode = "auto"
 # Removed --cov flags so a plain `pytest` run doesn't require pytest-cov
 # -p no:warnings keeps output clean during local dev
-addopts = "-v -p no:warnings"
+# --tb=short gives more concise tracebacks, easier to scan when iterating locally
+addopts = "-v -p no:warnings --tb=short"
 
 [tool.coverage.run]
 source = ["swarms"]
