@@ -83,7 +83,8 @@ asyncio_mode = "auto"
 # -p no:warnings keeps output clean during local dev
 # --tb=short gives more concise tracebacks, easier to scan when iterating locally
 # Personal preference: added --durations=10 to surface the 10 slowest tests after each run
-addopts = "-v -p no:warnings --tb=short --durations=10"
+# Personal tweak: bumped --durations to 20 so I can see a broader picture of slow tests
+addopts = "-v -p no:warnings --tb=short --durations=20"
 
 [tool.coverage.run]
 source = ["swarms"]
