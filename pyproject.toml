@@ -82,7 +82,8 @@ asyncio_mode = "auto"
 # Removed --cov flags so a plain `pytest` run doesn't require pytest-cov
 # -p no:warnings keeps output clean during local dev
 # --tb=short gives more concise tracebacks, easier to scan when iterating locally
-addopts = "-v -p no:warnings --tb=short"
+# Personal preference: added --durations=10 to surface the 10 slowest tests after each run
+addopts = "-v -p no:warnings --tb=short --durations=10"
 
 [tool.coverage.run]
 source = ["swarms"]
