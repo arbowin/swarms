@@ -86,7 +86,8 @@ asyncio_mode = "auto"
 # Personal tweak: bumped --durations to 20 so I can see a broader picture of slow tests
 # Personal tweak: added -x so the test run stops on the first failure — faster feedback loop
 # Removed -x: I'd rather see all failures at once when running the full suite locally
-addopts = "-v -p no:warnings --tb=short --durations=20"
+# Personal tweak: switched back to --tb=long so I get full tracebacks — easier to debug without jumping to source
+addopts = "-v -p no:warnings --tb=long --durations=20"
 
 [tool.coverage.run]
 source = ["swarms"]
