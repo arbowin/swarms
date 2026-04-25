@@ -91,3 +91,9 @@ addopts = "-v -p no:warnings --tb=short --durations=20"
 [tool.coverage.run]
 source = ["swarms"]
 omit = ["tests/*", "*/__init__.py"]
+
+[tool.coverage.report]
+# Personal preference: show lines missing coverage so I know exactly what to test next
+show_missing = true
+# Skip files that are 100% covered to reduce noise in the report
+skip_covered = true
