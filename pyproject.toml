@@ -98,5 +98,5 @@ omit = ["tests/*", "*/__init__.py"]
 show_missing = true
 # Skip files that are 100% covered to reduce noise in the report
 skip_covered = true
-# Fail the coverage check if total drops below 60% — loose floor while I'm still exploring the codebase
+# Fail the coverage check if overall coverage drops below 60% — a reasonable floor for a learning project
 fail_under = 60
